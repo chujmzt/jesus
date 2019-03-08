@@ -52,6 +52,11 @@
     <Compile Include="FormaHelloWorld.Designer.Designer.cs">
       <DependentUpon>FormaHelloWorld.Designer.cs</DependentUpon>
     </Compile>
+    <Compile Include="modelo\campeonato\Arbitro.cs" />
+    <Compile Include="modelo\campeonato\cancha.cs" />
+    <Compile Include="modelo\campeonato\Equipo.cs" />
+    <Compile Include="modelo\campeonato\Jugador.cs" />
+    <Compile Include="modelo\campeonato\Persona.cs" />
     <Compile Include="modelo\Estudiante.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
