@@ -57,7 +57,28 @@
     <Compile Include="modelo\campeonato\Equipo.cs" />
     <Compile Include="modelo\campeonato\Jugador.cs" />
     <Compile Include="modelo\campeonato\Persona.cs" />
+    <Compile Include="modelo\cinema\Asiento.cs" />
+    <Compile Include="modelo\cinema\Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modelo\cinema\Pelicula.cs" />
+    <Compile Include="modelo\cinema\Persona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modelo\cinema\Persona.Designer.cs">
+      <DependentUpon>Persona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modelo\cinema\Sala.cs" />
+    <Compile Include="modelo\cinema\Taquillero.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="modelo\Estudiante.cs" />
+    <Compile Include="modelo\Persona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modelo\Persona.Designer.cs">
+      <DependentUpon>Persona.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -69,6 +90,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
