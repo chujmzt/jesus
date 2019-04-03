@@ -20,5 +20,11 @@ namespace unidad_lll.modelo.campeonato
         public DateTime FechaInicio { get; set; }
         public DateTime FechaTermino { get; set; }
         public string Jornadas { get; set; }
+
+        //Formatear la salida a Archivo de texto
+        public override string ToString()
+        {
+            return _id + "|" + _nombre + "|" + _fechainicio.ToString("dd/MM/yyyy") + "|" + _fechatermino.ToString("dd/MM/yyyy");
+        }
     }
 }

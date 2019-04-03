@@ -2,67 +2,36 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using unidad_lll.vista;
 using System.Windows.Forms;
+
 
 namespace unidad_lll
 {
-   class persona
+    static class Program
     {
-        protected int _id;
-        protected string _nombre;
-        protected string _apellidos;
-        protected string _domicilio;
-        protected string _email;
-        protected string _password;
+        public static FormaCampeonato formaCampeonato = null;
+        public static Principal formaPrincipal = null;
+        public static FormaJornada formaJornada = null;
 
-        public persona()
+        ///<summary>
+        /// the main entry point for the aplication
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            _nombre = "Jesus";
-            _apellidos = "jimenez";
-        }
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            formaPrincipal = new Principal();
+            formaCampeonato = new FormaCampeonato();
+           jornada = new FormaJornada();
 
-        public persona(string nombre, string apellidos)
-        {
-            _nombre = nombre;
-            _apellidos = apellidos;
-        }
+            Application.Run(formaPrincipal);
 
-        //Metodos Getter´s y Setter´s
-        public int Id
-        {
-            get
-            {
-                return _id;
-            }
-            set
-            {
-                _id = value;
-            }
-        }
 
-        public string Nombre
-        {
-            get
-            {
-                return _nombre;
-            }
-            set
-            {
-                if (value.Length >= 3 && value.Length <= 30)
-                    _nombre = value;
-            }
         }
-
-        public string apellidos
-        {
-            get
-            {
-                return _apellidos;
-            }
-            set
-            {
-                if (value.legth >= 3 && value.legth <= 30)
-                    _apelliodos = value;
-
-            }
-        }
+    }
+}
+  
+    
+       

@@ -93,6 +93,18 @@
     <Compile Include="modelo\Persona.Designer.cs">
       <DependentUpon>Persona.cs</DependentUpon>
     </Compile>
+    <Compile Include="modelo\vista\FormaCampeonato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modelo\vista\FormaCampeonato.Designer.cs">
+      <DependentUpon>FormaCampeonato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modelo\vista\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modelo\vista\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="modelo\campeonato\Campeonato1.resx">
@@ -100,6 +112,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modelo\campeonato\Jornada1.resx">
       <DependentUpon>Jornada1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modelo\vista\FormaCampeonato.resx">
+      <DependentUpon>FormaCampeonato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modelo\vista\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
